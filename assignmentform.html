@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FormValidation</title>
+  </head>
+  <body>
+    <h1>FORM</h1>
+    <form name="first" onsubmit="return validate()">
+      <div>
+        <label>First Name:</label>
+        <input type="text" name="fname" placeholder="Enter FirstNAme" />
+        <small id="fnameErr"></small>
+      </div>
+      <div>
+        <label>Second Name:</label>
+        <input type="text" name="sname" placeholder="Enter SecondName" />
+        <small id="snameErr"></small>
+      </div>
+      <div>
+        <label>Email:</label>
+        <input type="email" name="emails" placeholder="Enter email" />
+        <small id="emailErr"></small>
+      </div>
+      <div>
+        <label>Phone Number:</label>
+        <input type="number" name="phoneNum" placeholder="Enter Phone no" />
+        <small id="phoneErr"></small>
+      </div>
+      <div>
+        <label>Date Of Birth:</label>
+        <input type="date" name="dob" placeholder="Enter dob" />
+        <small id="dateErr"></small>
+      </div>
+      <div>
+        <label>Age:</label>
+        <input type="number" name="age" placeholder="Enter Age" />
+        <small id="ageErr"></small>
+      </div>
+      <div>
+        <label>Address:</label>
+        <textarea
+          cols="20"
+          rows="2"
+          name="address"
+          placeholder="Enter Address"
+        ></textarea>
+        <small id="addressErr"></small>
+      </div>
+      <div>
+        <label>Password:</label>
+        <input type="password" name="pwd" placeholder="Enter Password" />
+        <small id="pwdErr"></small>
+      </div>
+      <div>
+        <label>Confirm Password:</label>
+        <input type="password" name="Cpwd" placeholder=" confirm  Password" />
+        <small id="cpwdErr"></small>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+    <script src="./assignmentform.js"></script>
+  </body>
+</html>
